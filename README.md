@@ -85,7 +85,7 @@ python -m interactive-bot
 **PS:** 正式运营，还是需要类似`PM2`、`supervisor`之类的进程管理工具，配合看门狗来实现不间断运行、自动重启、失效重启等功能。 
 
 #### 3.2 docker 执行
-1. 安装docker ， 参看 [Install Docker under Ubuntu 22.04](https://gist.github.com/dehsilvadeveloper/c3bdf0f4cdcc5c177e2fe9be671820c7)
+1. 安装docker
 2. 执行`docker build -t tgibot .` 生成一个tgibot的镜像
 3. 执行`docker run --restart always --name telegram-interactive-bot  -v "$PWD":/app tgibot:latest` 生成容器并执行。
 
@@ -101,13 +101,3 @@ python -m interactive-bot
 
 - 本产品基于Apache协议开源。
 - 作者 米哈( [@MrMiHa](https://t.me/MrMiHa) )是一个苦逼程序员，不是煤场奴工，有问题别太理直气壮的跑来下命令。
-- 讨论群组是 : https://t.me/DeveloperTeamGroup 欢迎加入后玩耍
-- 随意Fork，记得保留`关于`的内容。
-- 初版写了2小时。喜欢请打赏。不会部署，群里找我。
-- 服务器推荐RackNerd的。实际上，我也确实用这个。够便宜。这款就够：[2核3G--年32刀](https://my.racknerd.com/aff.php?aff=11705&pid=905) 
-- 实在搞不定部署，可以群里找大家帮忙部署下。服务器也可以找大家共用： https://t.me/DeveloperTeamGroup 
-- 实在实在实在搞不定部署，找  [@MrMiHa](https://t.me/MrMiHa)  同学付费部署……
-
-# 详细部署文档
-
-[米哈同学的知识库](https://miha.uk/docs/tutor/telegram-interactive-bot/)
